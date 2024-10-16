@@ -66,8 +66,8 @@
 /* تنسيق الواجهة الرئيسية  */
 .home{
     width: 100%;
-    height: 150vh;
-    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(background.jpg);
+    height: 88vh;
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(background1.jpeg);
     background-repeat: repeat;
     background-size: cover;
 }
@@ -302,6 +302,33 @@
     background: rgb(18, 9, 97);
     color: white;
     border-radius: 5px;
+}
+
+
+.row {
+    display: flex;               
+    justify-content: space-between; 
+}
+
+.col-md-2 {
+    flex: 0 0 20%;            
+    display: flex;            
+    flex-direction: column;    
+}
+
+.card {
+    display: flex;              
+    flex-direction: column;   
+    height: 100%;               
+}
+
+.card-body {
+    flex: 1;                    
+}
+
+.card-img-top {
+    width: 100%;               
+    height: auto;             
 }
 
 /* تنسيق القسم  نهاية */
