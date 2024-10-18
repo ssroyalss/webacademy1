@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>secure</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background: linear-gradient(135deg, #000000, #5e35b1, #1e88e5);
+            color: #e0e0e0;
+            min-height: 100vh;
+            font-family: 'Arial', sans-serif;
+        }
+        .header {
+            text-align: right;
+            padding: 50px;
+            background: rgba(30, 30, 30, 0.8);
+            color: white;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+        .footer {
+            text-align: center;
+            margin: 30px 0;
+            color: #a0a0a0;
+        }
+        .card {
+            background-color: #1f1f1f;
+            border: none;
+            border-radius: 10px;
+            margin-top: 20px;
+            text-align: right;
+        }
+        .btn-custom {
+            background-color: #1de9b6;
+            border: none;
+        }
+        .btn-custom:hover {
+            background-color: #0fb8a4;
+        }
+        .output {
+            margin-top: 20px;
+            background-color: #2e2e2e;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .alert {
+            margin-top: 20px;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container" style="margin-top: 100px;">
+        <div class="header">
+            <h1>secure XSS</h1>
+            <p>يمكنك إدخال كود  لتجربة الاستغلال.</p>
+        </div>
+
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">إدخال كود جافا سكربت</h5>
+                <form id="xssForm">
+                    <div class="form-group">
+                        <label for="userInput">أدخل كود:</label>
+                        <textarea id="userInput" class="form-control" rows="3" placeholder="مثل: alert('مرحبا!');"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-custom">تنفيذ الكود</button>
+                </form>
+
+                <div class="alert" id="alertMessage" style="display: none;">
+                    <strong>تحذير!</strong> الصفحة محمية، لا تحاول العبث.
+                </div>
+
+                <div class="output mt-4">
+                    <h6>الناتج:</h6>
+                    <div id="outputResult"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>جميع الحقوق محفوظة &copy; 2024</p>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+    <script>
+        document.getElementById('xssForm').addEventListener('submit', function(event) {
+            event.preventDefault(); 
+
+            const userInput = document.getElementById('userInput').value;
+            const outputResult = document.getElementById('outputResult');
+            const alertMessage = document.getElementById('alertMessage');
+
+            alertMessage.style.display = 'block';
+            outputResult.innerHTML = '';
+            
+            
+            const safeInput = sanitizeInput(userInput);
+
+            outputResult.innerHTML = `تم إدخال الكود: <pre>${safeInput}</pre>`;
+        });
+
+        function sanitizeInput(input) {
+            return input.replace(/&/g, "&amp;")
+                        .replace(/</g, "&lt;")
+                        .replace(/>/g, "&gt;")
+                        .replace(/"/g, "&quot;")
+                        .replace(/'/g, "&#39;");
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>صفحة غامضة في مجال CTF</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body {
+            background: linear-gradient(135deg, #000000, #5e35b1, #1e88e5);
+            color: #e0e0e0;
+            min-height: 100vh;
+            font-family: 'Arial', sans-serif;
+            transition: background-color 0.5s;
+        }
+        .navbar {
+            background-color: rgba(30, 30, 30, 0.9);
+            transition: background-color 0.3s;
+        }
+        .navbar:hover {
+            background-color: rgba(30, 30, 30, 1);
+        }
+        .header {
+            text-align: center;
+            padding: 50px;
+            background: rgba(30, 30, 30, 0.8);
+            color: white;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+        .card {
+            background-color: #1f1f1f;
+            border: none;
+            border-radius: 10px;
+            transition: transform 0.3s, box-shadow 0.3s;
+            overflow: hidden;
+            position: relative;
+        }
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+        }
+        .card img {
+            width: 100%;
+            height: 150px; /* يمكن تغيير هذا الارتفاع حسب الحاجة */
+            object-fit: cover;
+            transition: transform 0.3s;
+        }
+        .card:hover img {
+            transform: scale(1.1);
+        }
+        .btn-custom {
+            background-color: #1de9b6;
+            border: none;
+        }
+        .btn-custom:hover {
+            background-color: #0fb8a4;
+        }
+        .footer {
+            text-align: center;
+            margin: 30px 0;
+            color: #a0a0a0;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <a class="navbar-brand" href="#">
+            <img src="https://via.placeholder.com/40" alt="شعار الموقع"> CTF عالم الغموض
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="تبديل الملاحة">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">الرئيسية</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">التحديات</a>
+                </li>
+        </div>
+    </nav>
+
+    <div class="container" style="margin-top: 100px;">
+        <div class="header">
+            <h1>عالم CTF الغامض</h1>
+            <p>استكشف تحديات الأمان السيبراني!</p>
+        </div>
+
+
+
+        <div class="row mt-4">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">مقدمة في CTF</h5>
+                        <p class="card-text">تحديات الـ CTF هي مسابقات في مجال الأمن السيبراني حيث يتنافس المشاركون لحل مشاكل أمنية.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">أنواع التحديات</h5>
+                        <p class="card-text">تشمل التحديات استغلال الثغرات، وتحليل الشبكات، والتشفير، وغيرها.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">فوائد المشاركة</h5>
+                        <p class="card-text">تساعد المشاركة في CTF على تعزيز مهاراتك في الأمن السيبراني واكتساب خبرة عملية.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+        <div class="row mt-4">
+            <div class="col-md-4">
+                <div class="card" onmouseover="hoverCard(this)" onmouseout="unhoverCard(this)">
+                    <img src="https://via.placeholder.com/400x150" alt="تحدي XSS">
+                    <div class="card-body">
+                        <h5 class="card-title">تحدي XSS</h5>
+                        <p class="card-text">استغلال الثغرات عبر النصوص المعلقة.</p>
+                        <button  class="btn btn-custom" onclick="startChallenge('cha1.html', 'تحدي XSS')">انتقل للتحدي</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card" onmouseover="hoverCard(this)" onmouseout="unhoverCard(this)">
+                    <img src="https://via.placeholder.com/400x150" alt="تحدي SQL Injection">
+                    <div class="card-body">
+                        <h5 class="card-title">تحدي SQL Injection</h5>
+                        <p class="card-text">استغلال ثغرات إدخال البيانات.</p>
+                        <button class="btn btn-custom" onclick="startChallenge('SQL Injection')">انتقل للتحدي</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card" onmouseover="hoverCard(this)" onmouseout="unhoverCard(this)">
+                    <img src="sql-injection.png" alt="تحدي التشفير">
+                    <div class="card-body">
+                        <h5 class="card-title">تحدي التشفير</h5>
+                        <p class="card-text">حل الألغاز المتعلقة بالتشفير.</p>
+                        <button class="btn btn-custom" onclick="startChallenge('Cryptography')">انتقل للتحدي</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <!-- قسم النصائح -->
+        <div class="tips-section">
+            <h2 class="text-center mt-5">نصائح للمشاركين في تحديات CTF</h2>
+            <div class="row mt-4">
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">ابدأ بالتدريب</h5>
+                            <p class="card-text">تأكد من ممارسة التحديات السابقة لتطوير مهاراتك.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">استخدم الأدوات المناسبة</h5>
+                            <p class="card-text">استغل الأدوات المتاحة لمساعدتك في حل التحديات.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">التعاون مع الفريق</h5>
+                            <p class="card-text">تعاون مع زملائك لتبادل المعرفة وحل المشكلات.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>جميع الحقوق محفوظة &copy; 2024</p>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+
+       function startChallenge(challengePage, challengeName) {
+       alert('ستنتقل إلى ' + challengeName + ' الآن!');
+       window.location.href = challengePage; // توجيه المستخدم إلى صفحة التحدي
+    }
+
+
+
+        // تأثيرات عند التمرير
+        window.addEventListener('scroll', function() {
+            let navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('bg-dark');
+            } else {
+                navbar.classList.remove('bg-dark');
+            }
+        });
+
+        // تأثيرات البطاقات
+        function hoverCard(card) {
+            card.style.transform = 'scale(1.05)';
+            card.style.boxShadow = '0 10px 30px rgba(0, 0, 0, 0.5)';
+        }
+
+        function unhoverCard(card) {
+            card.style.transform = 'scale(1)';
+            card.style.boxShadow = 'none';
+        }
+    </script>
+</body>
+</html>
