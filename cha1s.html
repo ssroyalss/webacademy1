@@ -65,7 +65,7 @@
                 <form id="xssForm">
                     <div class="form-group">
                         <label for="userInput">أدخل كود:</label>
-                        <textarea id="userInput" class="form-control" rows="3" placeholder="مثل: alert('مرحبا!');"></textarea>
+                        <textarea id="userInput" class="form-control" rows="3"></textarea>
                     </div>
                     <button type="submit" class="btn btn-custom">تنفيذ الكود</button>
                 </form>
@@ -114,6 +114,8 @@
                         .replace(/"/g, "&quot;")
                         .replace(/'/g, "&#39;");
         }
+
+        
     </script>
 </body>
 </html>
