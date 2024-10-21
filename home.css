@@ -8,6 +8,7 @@
     scroll-behavior: smooth;
 }
 
+
 /* تنسيق المنيو  */
 
 .navbar-brand img {
@@ -253,7 +254,13 @@
 }
 
 .Packages .card .card-body{
-    background: transparent;
+    display: flex; 
+    flex-direction: column; 
+    justify-content: space-between; 
+    padding: 0px; 
+    background-color: #f9f9f9; 
+    border-radius: 8px; 
+    min-height: 100px; 
 }
 
 .Packages .card .card-body h3{
@@ -265,13 +272,6 @@
     font-size: 15px;
 }
 
-.checked{
-    color: rgb(18, 9, 97);
-}
-
-.star i{
-    font-size: 15px;
-}
 
 .Packages .card .card-body h6{
     font-size: 20px;
@@ -314,7 +314,10 @@
 
 .card-link {
     margin-top: 20px;          
-    text-align: center;     
+    text-align: center;    
+    display: inline-block; /* يجعل الرابط يمكن تنسيقه */
+    margin-top: auto; /* دفع الرابط إلى الأسفل */
+ 
 }
 /* تنسيق العروض  نهاية */
 
@@ -352,70 +355,6 @@
 /* تنسيق الاهداف  نهاية */
 
 
-/*  تنسيق الصور  بداية */
-.gallary{
-    margin-top: 50px;
-}
-
-.gallary .card{
-    border-radius: 10px;
-    box-shadow: rgba(0,0,0,0.1) 0px 4px 12px;
-    cursor: pointer;
-
-}
-
-.gallary .card img{
-    border-radius: 10px;
-    transition: 0.5s;
-
-}
-
-.gallary .card img:hover{
-    transform: scale(1.1);
-}
-
-
-/* تنسيق الصور  نهاية */
-
-/*  تنسيق من نحن  بداية */
-.Contact{
-    padding: 5px;
-    margin-top: 50px;
-    background: white;
-
-}
-.Contact .card{
-    border-radius: 10px;
-
-}
-
-.Contact .card img{
-    border-radius: 12px;
-}
-
-.Contact h2{
-    font-weight: 600;
-    letter-spacing: 1px;
-}
-.Contact p{
-    font-size: 500;
-}
-#Contact-btn{
-    width: 150px;
-    height: 38px;
-    border: none;
-    border-radius: 5px;
-    background: rgb(18, 9, 97);;
-    color: white;
-    letter-spacing: 2px;
-    font-weight: 550;
-    transition: 0.5s ease;
-    cursor: pointer;
-} 
-
-#Contact-btn:hover{
-    width: 175px;
-}
 
 /* تنسيق من نحن  نهاية */
 
