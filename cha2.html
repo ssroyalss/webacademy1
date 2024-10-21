@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CTF - [ENCRYPT]</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background: linear-gradient(135deg, #000000, #5e35b1, #1e88e5);
+            color: #e0e0e0;
+            min-height: 100vh;
+            font-family: 'Arial', sans-serif;
+        }
+        .header {
+            text-align: center;
+            padding: 50px;
+            background: rgba(30, 30, 30, 0.8);
+            color: white;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+        .footer {
+            text-align: center;
+            margin: 30px 0;
+            color: #a0a0a0;
+        }
+        .card {
+            background-color: #1f1f1f;
+            border: none;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+        .btn-custom {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: #000000;
+            background-color: #1de9b6;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none; 
+            transition: background-color 0.3s, transform 0.3s;
+        }
+        .btn-custom:hover {
+            background-color: #0fb8a4;
+            transform: scale(1.05);
+        }
+        .hidden-section {
+            display: none;
+            margin-top: 20px;
+        }
+        a.button-link {
+           display: inline-block; /* لجعل الرابط يتصرف مثل الزر */
+           padding: 10px 20px; /* مساحة داخلية */
+           font-size: 16px; /* حجم الخط */
+           color: #000000; /* لون النص */
+           background-color: #1de9b6; /* لون خلفية الزر */
+           border: none; /* إزالة الحدود */
+           border-radius: 5px; /* زوايا مدورة */
+           text-decoration: none; /* إزالة التسطير */
+           transition: background-color 0.3s, transform 0.3s; /* تأثير التحول */
+         }
+
+        a.button-link:hover {
+           background-color: #0fb8a4; /* تغيير اللون عند التمرير */
+           transform: scale(1.05); /* تأثير تكبير عند التمرير */
+        }
+
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <a class="navbar-brand" href="#">
+            <img src="logo1.png" alt="شعار الموقع"> CTF 
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="تبديل الملاحة">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">الرئيسية</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="CTF.html">التحديات</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container" style="margin-top: 100px;">
+        <div class="header">
+            <h1> CTF : [encrypted]</h1>
+            <p>هنا يمكنك العثور على جميع المعلومات المتعلقة بالتحدي.</p>
+        </div>
+
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">وصف التحدي</h5>
+                <p class="card-text">
+                </p>
+                <p>في أعماق الغابة، يوجد كنز مخفي وراء كلمة مرور مشفرة. لكن للوصول إليه، يجب عليك فك تشفير هذه الكلمة.</p>
+                <p>surgwhw</p>
+                <p>ملاحظة: هناك ثلاث خطوات تفصل بينك وبين الكلمة الأصلية. استخدم هذه المعلومة لتكتشف مقدار الإزاحة.</p>
+                <h6>نقاط رئيسية:</h6>
+                <ul>
+                    <li>الملف محمي بكلمة سر</li>
+                    <li>استخدم اداة في كالي</li>
+                    <li>الملف لا يحتوي على تقنيات تشفير</li>
+                </ul>
+                
+                <h5 class="mt-4">ملف لتحميله:</h5>
+                <a href="challeng.txt.gpg" class="button-link" download>تحميل الملف</a>
+
+                <h5 class="mt-4">معلومات حول الهنت:</h5>
+                <button class="btn btn-custom" id="toggleHunt">عرض معلومات الهنت</button>
+                <div class="hidden-section" id="huntInfo">
+                    <p>استخدم خوارزمية قيصر لفك كلمة المرور</p>
+                    <p>استخدم اداة gpg</p>
+                    <p>الازاحة 3</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">تحقق من الفلاق</h5>
+                <form id="xssForm">
+                    <div class="form-group">
+                        <label for="userInput">أدخل الفلاق:</label>
+                        <textarea id="userInput" class="form-control" rows="3"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-custom">تحقق</button>
+                    <button type="button" id="resetButton" class="btn btn-secondary">إعادة تعيين</button>
+                </form>
+        
+                <div class="output mt-4">
+                    <h6>الناتج:</h6>
+                    <div id="outputResult"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>جميع الحقوق محفوظة &copy; 2024</p>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+    <script>
+        document.getElementById('xssForm').addEventListener('submit', function(event) {
+            event.preventDefault(); 
+    
+            const userInput = document.getElementById('userInput').value;
+            const outputResult = document.getElementById('outputResult');
+    
+            const correctFlag = "FLAG{WEBACADEMY}";
+    
+            if (userInput === correctFlag) {
+                outputResult.innerHTML = "<span style='color: green;'>صحيح! لقد حصلت على الفلاق.</span>";
+            } else {
+                outputResult.innerHTML = "<span style='color: red;'>خطأ! الفلاق غير صحيح.</span>";
+            }
+        });
+    
+        document.getElementById('resetButton').addEventListener('click', function() {
+            document.getElementById('userInput').value = ''; 
+            document.getElementById('outputResult').innerHTML = ''; 
+        });
+
+        document.getElementById('toggleHunt').addEventListener('click', function() {
+            const huntInfo = document.getElementById('huntInfo');
+            huntInfo.classList.toggle('hidden-section');
+            this.textContent = huntInfo.classList.contains('hidden-section') ? 'عرض معلومات الهنت' : 'إخفاء معلومات الهنت';
+        });
+    </script>
+</body>
+</html>
