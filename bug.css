@@ -66,10 +66,11 @@
 /* تنسيق الواجهة الرئيسية  */
 .home{
     width: 100%;
-    height: 150vh;
-    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(background.jpg);
+    height: 105vh;
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(background1.jpeg);
     background-repeat: repeat;
     background-size: cover;
+    margin-bottom: 100px;
 }
 .home .content{
     text-align: center;
@@ -301,6 +302,19 @@
     color: white;
     border-radius: 5px;
 }
+
+
+.row {
+    display: flex;              /* استخدام Flexbox */
+    justify-content: space-between; /* توزيع البطاقات بالتساوي */
+    align-items: stretch;      /* تجعل جميع البطاقات بنفس الطول */
+}
+
+.card {
+    flex: 1;                   /* تجعل كل بطاقة تأخذ نفس العرض */
+    margin: 10px;             /* إضافة هامش بين البطاقات */
+}
+
 
 /* تنسيق العروض  نهاية */
 
