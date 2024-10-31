@@ -57,6 +57,12 @@
         transform: scale(1.05);
         }
 
+        .arabic {
+    direction: rtl; /* اتجاه النص من اليمين إلى اليسار */
+    text-align: right; /* محاذاة النص إلى اليمين */
+    font-family: 'Arial', sans-serif; /* خط مناسب للغة العربية */
+}
+
 
 
         
@@ -93,25 +99,25 @@
         
         <div class="card">
             <div class="card-body">
-                <h5 class="card-title">وصف التحدي</h5>
-                <p class="card-text">
+                <h5 class="card-title , arabic" >وصف التحدي</h5>
+                <p class="card-text , arabic">
                     في هذا التحدي، سيتمكن المهاجم من إدخال كود JavaScript في تطبيق ويب بسيط. الهدف هو استغلال ثغرة XSS لجعل التطبيق يظهر رسالة ترحيب مخصصة.
                 </p>
-                <h6>نقاط رئيسية:</h6>
+                <h6 class="arabic">نقاط رئيسية:</h6>
                 <ul>
-                    <li>الهدف : استغلال ثغرة XSS لعرض رسالة ترحيب.</li>
-                    <li>المتطلبات : معرفة أساسيات HTML وJavaScript.</li>
-                    <li>التقنيات المستخدمة: JavaScript، HTML.</li>
+                    <li class="arabic">الهدف : استغلال ثغرة XSS لعرض رسالة ترحيب.</li>
+                    <li class="arabic">المتطلبات : معرفة أساسيات HTML وJavaScript.</li>
+                    <li class="arabic">التقنيات المستخدمة: JavaScript، HTML.</li>
                 </ul>
                 
-                <h5 class="mt-4">ملف لتحميله:</h5>
+                <h5 class="mt-4 , arabic">ملف لتحميله:</h5>
 
 
-                <h5 class="mt-4">معلومات حول الهنت:</h5>
-                <button class="btn btn-custom" id="toggleHunt">عرض معلومات الهنت</button>
-                <div class="hidden-section" id="huntInfo">
-                    <p>الوصف: الهدف من هذا التحدي هو فهم كيفية استغلال الثغرات في التطبيقات.</p>
-                    <p>اذا كنت تشاهد حقل ضع فيه كود جافا سكربت كمثال اليرت</p>
+                <h5 class="mt-4 , arabic">تلميحات</h5>
+                <button class="btn btn-custom , arabic" id="toggleHunt">عرض التلميحات</button>
+                <div class="hidden-section , arabic" id="huntInfo">
+                    <p class="arabic">الوصف: الهدف من هذا التحدي هو فهم كيفية استغلال الثغرات في التطبيقات.</p>
+                    <p class="arabic">اذا كنت تشاهد حقل ضع فيه كود جافا سكربت كمثال اليرت</p>
                 </div>
             </div>
         </div>
