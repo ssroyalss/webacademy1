@@ -251,6 +251,11 @@
 /* تنسيق القسم السفلي نهاية */
 
 /*  تنسيق القسم  بداية */
+.arabic {
+    direction: rtl; /* اتجاه النص من اليمين إلى اليسار */
+    text-align: right; /* محاذاة النص إلى اليمين */
+    font-family: 'Arial', sans-serif; /* خط مناسب للغة العربية */
+}
 .main-txt h1{
     text-align: center;
     margin-top: 30px;
