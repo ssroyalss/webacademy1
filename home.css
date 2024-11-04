@@ -159,84 +159,12 @@
 /* تنسيق الواجهة الرئيسية نهاية */
 
 
-/* تنسيق القسم السفلي بداية */
-
-.book{
-    background: white;
-    padding: 50px;
-}
-
-.main-text h1{
-    text-align: center;
-    text-shadow: 0px 1px 1px black;
-    font-weight: 1000;
-}
-
-.main-text h1 span{
-    color: rgb(55, 19, 155);
-
-}
-
-.book .card{
-    border-radius: 10px;
-    box-shadow: 0px 5px 5px -6px black;
-}
-
-.book .row{
-    margin-top: 30px;
-}
-
-.book form input{
-    padding: 10px;
-    color: black;
-    border: none;
-    outline: none;
-    font-size: 15px;
-    border-radius: 10px;
-    box-shadow: 0px 5px 5px -6px black;
-
-}
-
-.book form textarea{
-    border: none;
-    border-radius: 10px;
-    resize: none;
-    box-shadow: 0px 5px 5px -6px black;
-    height: 200px;
-
-}
-
-.book .submit{
-    width: 160px;
-    font-size: 16px;
-    font-weight: 550;
-    background: saddlebrown;
-    color: white;
-    margin-top: 10px;
-    transition: 0.5s;
-}
-.book .submit:hover{
-    background: sandybrown;
-    width: 170px;
-}
-
-@media (max-width:670px){
-    .book{
-        padding: 0;
-    }
-    .main-text h1{
-        margin-top: 20px;
-
-    }
-}
-/* تنسيق القسم السفلي نهاية */
-
 /*  تنسيق العروض  بداية */
 
 .arabic {
-    direction: rtl; /* اتجاه النص من اليمين إلى اليسار */
-    text-align: right; /* محاذاة النص إلى اليمين */
-    font-family: 'Arial', sans-serif; /* خط مناسب للغة العربية */
+    direction: rtl; 
+    text-align: right; 
+    font-family: 'Arial', sans-serif; 
 }
 
 .main-txt h1{
@@ -293,9 +221,12 @@
     border-radius: 5px;
 }
 
+
 .row {
     display: flex;              
     justify-content: space-between; 
+    padding: 10px;
+    margin-bottom: 20px
 }
 
 .col-md-2 {
@@ -308,11 +239,13 @@
     display: flex;              
     flex-direction: column;     
     margin: 10px;              
-    height: 100%;             
+    height: 100%;    
+    margin-bottom: 20px         
 }
 
 .card-body {
-    flex: 100%;                   
+    flex: 100%;  
+    margin-bottom: 20px                 
 }
 
 .card-img-top {
@@ -323,8 +256,8 @@
 .card-link {
     margin-top: 20px;          
     text-align: center;    
-    display: inline-block; /* يجعل الرابط يمكن تنسيقه */
-    margin-top: auto; /* دفع الرابط إلى الأسفل */
+    display: inline-block; 
+    margin-top: auto; 
  
 }
 /* تنسيق العروض  نهاية */
@@ -335,19 +268,28 @@
 .services{
     background: white;
     margin-top: 80px;
+    padding: 10px;
+    margin-bottom: 10px;
 
 }
 
 .services .card{
-    box-shadow:rgba(96, 116, 206, 0.1) 10px 4px 12px;
-    border: 1px solid #d8d7d7bd;
+    border-radius: 35px;
     cursor: pointer;
-    margin: 20px; /* المسافة بين الكارد والعناصر المحيطة */
-    padding: 20px; /* المسافة داخل الكارد */
-
-
+    margin: 20px; 
+    padding: 15px; 
+    margin-bottom: 10px;
+    border: none;
+    
     
 }
+
+.services .row{
+    padding: 1px; 
+    margin-bottom: 30px;
+    
+}
+
 
 .services .card i{
     font-size: 80px;
@@ -367,9 +309,6 @@
 
 /* تنسيق الاهداف  نهاية */
 
-
-
-/* تنسيق من نحن  نهاية */
 
 /*  تنسيق الفوتير  بداية */
 #footer{
