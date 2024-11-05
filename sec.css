@@ -356,11 +356,13 @@
 }
 
 .services .card{
-    box-shadow:rgba(96, 116, 206, 0.1) 10px 4px 12px;
-    border: 1px solid #d8d7d7bd;
+    border-radius: 35px;
     cursor: pointer;
-    margin: 20px; /* المسافة بين الكارد والعناصر المحيطة */
-    padding: 20px; /* المسافة داخل الكارد */
+    margin: 20px; 
+    padding: 15px; 
+    margin-bottom: 10px;
+    border: none;
+    
 
 
     
