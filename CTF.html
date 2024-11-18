@@ -62,12 +62,17 @@
             margin: 30px 0;
             color: #a0a0a0;
         }
+        .arabic {
+    direction: rtl; /* اتجاه النص من اليمين إلى اليسار */
+    text-align: right; /* محاذاة النص إلى اليمين */
+    font-family: 'Arial', sans-serif; /* خط مناسب للغة العربية */
+}
     </style>
 </head>
 <body>
 
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand , arabic" href="#">
             <img src="logo1.png" alt="شعار الموقع"> CTF
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="تبديل الملاحة">
@@ -93,8 +98,8 @@
 
 
         <div class="row mt-4">
-            <div class="col-md-4">
-                <div class="card">
+            <div class="col-md-4 ">
+                <div class="card , arabic">
                     <div class="card-body">
                         <h5 class="card-title">مقدمة في CTF</h5>
                         <p class="card-text">تحديات الـ CTF هي مسابقات في مجال الأمن السيبراني حيث يتنافس المشاركون لحل مشاكل أمنية.</p>
@@ -102,7 +107,7 @@
                 </div>
             </div>
             <div class="col-md-4">
-                <div class="card">
+                <div class="card , arabic">
                     <div class="card-body">
                         <h5 class="card-title">أنواع التحديات</h5>
                         <p class="card-text">تشمل التحديات استغلال الثغرات، وتحليل الشبكات، والتشفير، وغيرها.</p>
@@ -110,7 +115,7 @@
                 </div>
             </div>
             <div class="col-md-4">
-                <div class="card">
+                <div class="card , arabic">
                     <div class="card-body">
                         <h5 class="card-title">فوائد المشاركة</h5>
                         <p class="card-text">تساعد المشاركة في CTF على تعزيز مهاراتك في الأمن السيبراني واكتساب خبرة عملية.</p>
@@ -127,7 +132,7 @@
             <div class="col-md-4 mb-4">
                 <div class="card" onmouseover="hoverCard(this)" onmouseout="unhoverCard(this)">
                     <img src="XSSctf.png" alt="تحدي XSS">
-                    <div class="card-body">
+                    <div class="card-body , arabic">
                         <h5 class="card-title">XSS : تحدي</h5>
                         <p class="card-text">استغلال الثغرات عبر النصوص المعلقة.</p>
                         <button  class="btn btn-custom" onclick="startChallenge('cha1.html', 'تحدي XSS')">انتقل للتحدي</button>
@@ -137,7 +142,7 @@
             <div class="col-md-4 mb-4">
                 <div class="card" onmouseover="hoverCard(this)" onmouseout="unhoverCard(this)">
                     <img src="web1.png" alt="تحدي SQL Injection">
-                    <div class="card-body">
+                    <div class="card-body , arabic">
                         <h5 class="card-title">تحدي تحليل صفحات الويب</h5>
                         <p class="card-text">استكشف خبرتك في تحليل الويب</p>
                         <button class="btn btn-custom" onclick="startChallenge('cha3.html', 'تحدي تحليل الويب')">انتقل للتحدي</button>
@@ -148,7 +153,7 @@
             <div class="col-md-4 mb-4">
                 <div class="card" onmouseover="hoverCard(this)" onmouseout="unhoverCard(this)">
                     <img src="encctf.png" alt="تحدي التشفير">
-                    <div class="card-body">
+                    <div class="card-body , arabic">
                         <h5 class="card-title">تحدي التشفير</h5>
                         <p class="card-text">حل الألغاز المتعلقة بالتشفير.</p>
                         <button class="btn btn-custom" onclick="startChallenge('cha2.html', 'تحدي التشفير')">انتقل للتحدي</button>
@@ -159,7 +164,7 @@
         <div class="col-md-4 mb-4">
             <div class="card" onmouseover="hoverCard(this)" onmouseout="unhoverCard(this)">
                 <img src="sql-injection.png" alt="تحدي SQL">
-                <div class="card-body">
+                <div class="card-body , arabic">
                     <h5 class="card-title">SQL injection : تحدي</h5>
                     <p class="card-text">حاول تخطي تسجيل الدخول</p>
                     <button class="btn btn-custom" onclick="window.location.href='http://websec-ctf.unaux.com/login.html'"> انتقل للتحدي</button>
@@ -170,7 +175,7 @@
         <div class="col-md-4 mb-4">
             <div class="card" onmouseover="hoverCard(this)" onmouseout="unhoverCard(this)">
                 <img src="brute.jpg" alt="تحدي SQL">
-                <div class="card-body">
+                <div class="card-body , arabic">
                     <h5 class="card-title">Brute-Forcing Login : تحدي</h5>
                     <p class="card-text">حاول ان تسجل بصلاحية الادمن وتحصل على الفلاق</p>
                     <button class="btn btn-custom" onclick="window.location.href='http://websec-ctf.unaux.com/force.html'"> انتقل للتحدي</button>
@@ -181,7 +186,7 @@
         <div class="col-md-4 mb-4">
             <div class="card" onmouseover="hoverCard(this)" onmouseout="unhoverCard(this)">
                 <img src="Path Traversal.png" alt="تحدي SQL">
-                <div class="card-body">
+                <div class="card-body , arabic">
                     <h5 class="card-title">Path Traversal : تحدي</h5>
                     <p class="card-text">حاول ان تظهر الفلاق بطريقة ما</p>
                     <button class="btn btn-custom" onclick="window.location.href='http://websec-ctf.unaux.com/upload.html'"> انتقل للتحدي</button>
@@ -199,7 +204,7 @@
             <h2 class="text-center mt-5">نصائح للمشاركين في تحديات CTF</h2>
             <div class="row mt-4">
                 <div class="col-md-4">
-                    <div class="card">
+                    <div class="card , arabic">
                         <div class="card-body">
                             <h5 class="card-title">ابدأ بالتدريب</h5>
                             <p class="card-text">تأكد من ممارسة التحديات السابقة لتطوير مهاراتك.</p>
@@ -207,7 +212,7 @@
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="card">
+                    <div class="card , arabic">
                         <div class="card-body">
                             <h5 class="card-title">استخدم الأدوات المناسبة</h5>
                             <p class="card-text">استغل الأدوات المتاحة لمساعدتك في حل التحديات.</p>
@@ -215,7 +220,7 @@
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="card">
+                    <div class="card , arabic">
                         <div class="card-body">
                             <h5 class="card-title">التعاون مع الفريق</h5>
                             <p class="card-text">تعاون مع زملائك لتبادل المعرفة وحل المشكلات.</p>
