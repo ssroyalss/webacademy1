@@ -23,7 +23,7 @@
     padding: 10px;
 }
 #navbar{
-    background: rgb(83, 104, 199);
+    background: RGB(146, 168, 209)
 }
 #logo{
     font-size: 35px;
@@ -411,7 +411,9 @@
     width: 100%;
     margin-top: 10px;
     text-align: center;
-    background: rgba(66, 66, 66, 0.815);
+    background: RGB(146, 168, 209);
+    height: auto;
+    
 
 }
 
