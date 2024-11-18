@@ -180,6 +180,27 @@
          
           </section>
           <!-- تعريف القسم  نهاية -->
+
+
+    <button class="accordion">طرق الحماية</button>
+
+    <div class="panel">
+        <section class="book" id="book">
+            <div class="container">
+              <div class="main-text">
+                <h1><span>S</span>QL Injection</h1>
+      
+      
+      
+                  <div class="col-md-6 py-3 py-md-0" style="margin-left: 320px;">
+                      <p class="arabic" >  لحماية الموقع من ثغرة SQL Injection، يجب تنظيف مدخلات المستخدم باستخدام أدوات مثل الاستعلامات المعدة (Prepared Statements) أو إجراءات الربط (Bound Parameters). كما يُنصح بالتحقق من صحة البيانات المُدخلة وقبول القيم المتوقعة فقط. قم بتحديد الأذونات في قاعدة البيانات بحيث يقتصر المستخدم على أقل صلاحيات ممكنة.</p>
+      
+                  </div>
+                </div>
+              </div>
+            </div>
+    </div>
+
       
 
     <!--انواع الثغرات بداية -->
@@ -274,8 +295,37 @@
       </div>
      </footer>
      <!-- قسم الفوتر نهاية -->
+
+     <script>
+      // جلب جميع الأزرار التي تحمل الفئة "accordion"
+      var acc = document.getElementsByClassName("accordion");
+      
+      // إضافة حدث عند الضغط على كل زر
+      for (var i = 0; i < acc.length; i++) {
+          acc[i].addEventListener("click", function() {
+              // التبديل بين إضافة وإزالة فئة "active" للزر
+              this.classList.toggle("active");
+
+              var panel = this.nextElementSibling;
+
+              // التبديل بين فتح وإغلاق الـ panel باستخدام max-height و opacity
+              if (panel.style.maxHeight) {
+                  // إغلاق المحتوى
+                  panel.style.maxHeight = null;
+                  panel.style.opacity = 0;
+              } else {
+                  // فتح المحتوى
+                  panel.style.maxHeight = panel.scrollHeight + "px"; // تعيين max-height لارتفاع المحتوى الفعلي
+                  panel.style.opacity = 1; // تعيين الشفافية لتصبح مرئية
+              }
+          });
+      }
+  </script>
      
     
+
+
+     
      <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
      <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
