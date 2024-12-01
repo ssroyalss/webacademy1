@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset='utf-8'>
-    <title>WPA2</title>
+    <title>NMAP</title>
     <link rel='stylesheet' href='bug.css'>
 
     <!--هنا رابط البوت ستراب للاستعادة من المكتبة-->
@@ -32,33 +32,38 @@
 <body>
 
     <!-- هنا الناف بار المنيو في الاعلى-->
-    <header id="header">
-      <nav class="navbar navbar-expand-lg" id="navbar">
-          <div class="container">
-              <a class="navbar-brand" href="#">
-                  <img src="logo.png" alt="Logo">
-              </a>
-              <a class="navbar-brand" href="index.html" id="logo"><span>W</span>ebAcademy</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
-                  <span><i class="fa-solid fa-bars"></i></span>
-              </button>
-              <div class="collapse navbar-collapse" id="mynavbar">
-                  <ul class="navbar-nav me-auto">
-                      <li class="nav-item">
-                          <a class="nav-link active" href="index.html">الرئيسية</a>
-                      </li>
-                      <li class="nav-item">
-                          <a class="nav-link" href="#Packages">الادوات</a>
-                      </li>
-                  </ul>
-                  <form class="d-flex">
-                      <input class="form-control me-2" type="text" placeholder="Search">
-                      <button class="btn btn-primary" type="button">Search</button>
-                  </form>
-              </div>
+    <nav class="navbar navbar-expand-lg fixed-top" id="navbar">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="logo.png" >
+            </a>
+          <a class="navbar-brand" href="index.html" id="logo"><span>W</span>ebAcademy</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+            <span><ic class="fa-solid fa-bars"></i></span>
+          </button>
+          <div class="collapse navbar-collapse" id="mynavbar">
+            <ul class="navbar-nav me-auto">
+              <li class="nav-item">
+                <a class="nav-link active" href="index.html">الرئيسية</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Packages">الادوات</a>
+              </li>
+                
+            </ul>
+            
+            <form class="d-flex">
+              <input class="form-control me-2" type="text" placeholder="Search">
+              <button class="btn btn-primary" type="button">Search</button>
+              <li class="nav-item">
+              </li> 
+
+
+
+            </form>
           </div>
+        </div>
       </nav>
-  </header>
     <!--  هنا الناف بار المنيو في الاعلى-->
 
 
@@ -100,6 +105,39 @@
          
           </section>
           <!-- تعريف القسم  نهاية -->
+
+
+          <button class="accordion">طرق الحماية</button>
+
+    <div class="panel">
+        <section class="book" id="book">
+            <div class="container">
+              <div class="main-text">
+                <h1><span>W</span>PA2</h1>
+      
+      
+      
+                  <div class="col-md-6 py-3 py-md-0" style="margin-left: 320px;">
+                      <p class="arabic" > لحماية شبكة Wi-Fi الخاصة بك من اختراق WPA2 (WPA2 Crack)، يمكنك اتباع الإجراءات التالية بشكل عملي ومختصر:
+                        1.	استخدام كلمة مرور قوية:
+                        o	اجعل كلمة المرور طويلة ومعقدة تحتوي على أحرف كبيرة وصغيرة وأرقام ورموز.
+                        o	تجنب استخدام كلمات أو عبارات شائعة.
+                        2.	تمكين بروتوكول WPA3 إذا كان متاحًا
+                         إذا كان جهازك يدعم WPA3، قم بتمكينه لأنه أكثر أمانًا من WPA2.
+                        
+                        3.	تحديث الراوتر
+                        
+                         قم بتحديث برنامج الراوتر firmware بانتظام لضمان إصلاح الثغرات الأمنية.
+                        </p>
+      
+                  </div>
+                </div>
+              </div>
+            </div>
+    </div>
+
+      
+
       
 
     <!--انواع الثغرات بداية -->
@@ -156,8 +194,8 @@
       <p>موقع ويب تعليمي متكامل يركز على مجال امن المعلومات </p>
       <div class="social-links">
         <i class="fa-brands fa-twitter"></i>
-        <i class="fa-brands fa-twitter"></i>
-        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-youtube"></i>
       </div>
       <div class="credit">
         <p>Desined by @</p>
@@ -167,6 +205,35 @@
       </div>
      </footer>
      <!-- قسم الفوتر نهاية -->
+
+
+
+     <script>
+      // جلب جميع الأزرار التي تحمل الفئة "accordion"
+      var acc = document.getElementsByClassName("accordion");
+      
+      // إضافة حدث عند الضغط على كل زر
+      for (var i = 0; i < acc.length; i++) {
+          acc[i].addEventListener("click", function() {
+              // التبديل بين إضافة وإزالة فئة "active" للزر
+              this.classList.toggle("active");
+
+              var panel = this.nextElementSibling;
+
+              // التبديل بين فتح وإغلاق الـ panel باستخدام max-height و opacity
+              if (panel.style.maxHeight) {
+                  // إغلاق المحتوى
+                  panel.style.maxHeight = null;
+                  panel.style.opacity = 0;
+              } else {
+                  // فتح المحتوى
+                  panel.style.maxHeight = panel.scrollHeight + "px"; // تعيين max-height لارتفاع المحتوى الفعلي
+                  panel.style.opacity = 1; // تعيين الشفافية لتصبح مرئية
+              }
+          });
+      }
+  </script>
+     
      
     
      <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
