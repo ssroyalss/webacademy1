@@ -87,7 +87,7 @@
                 <div class="row">
                   <div class="col-md-6 py-3 py-md-0">
                     <div class="card">
-                      <iframe width="100%" height="315" src="https://www.youtube.com/embed/G77CCab9aqg?si=G83ie8-s8Gn7AV2P" frameborder="0" allowfullscreen></iframe>
+                      <iframe width="100%" height="315" src="https://www.youtube.com/embed/gx0AdcRhNto?si=uWbQAg31N55il-01" frameborder="0" allowfullscreen></iframe>
                       <p>المقدم : هيثم الحربي</p> 
                     </div>
                   </div>
@@ -105,6 +105,30 @@
          
           </section>
           <!-- تعريف القسم  نهاية -->
+
+          <button class="accordion">طرق الحماية</button>
+
+          <div class="panel">
+              <section class="book" id="book">
+                  <div class="container">
+                    <div class="main-text">
+                      <h1><span>W</span>PA2</h1>
+            
+            
+            
+                        <div class="col-md-6 py-3 py-md-0" style="margin-left: 320px;">
+                            <p class="arabic" >
+                              1.	تعطيل او إخفاء SSID  من خلال اعدادات الشبكة
+                              
+                              2.	تحديث الأجهزة بانتظام:
+                              قم بتحديث أنظمة التشغيل والتطبيقات باستمرار لإصلاح الثغرات الأمنية.
+                              </p>
+            
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+          </div>
       
 
     <!--انواع الثغرات بداية -->
@@ -122,7 +146,7 @@
             <div class="card">
 
 
-              <img src="imges/11111.jpg" alt="" height="250px">
+              <img src="tools1.jpg" alt="" height="250px">
               <div class="card-body">
                 <h3> wifidos.py</h3>
                 <p>تم انشاء الأداة بأستخدام لغة البايثون لانشاء هجمة Dos attack على الشبكة
@@ -135,7 +159,7 @@
             <div class="card">
 
 
-              <img src="imges/A12.jpeg" alt=""  height="250px">
+              <img src="tools1.jpg" alt=""  height="250px">
               <div class="card-body">
                 <h3>ALFA network wireless</h3>
                 <p>هو لاقط شبكة وايرليس
@@ -178,8 +202,8 @@
       <p>موقع ويب تعليمي متكامل يركز على مجال امن المعلومات </p>
       <div class="social-links">
         <i class="fa-brands fa-twitter"></i>
-        <i class="fa-brands fa-twitter"></i>
-        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-youtube"></i>
       </div>
       <div class="credit">
         <p>Desined by @</p>
@@ -189,6 +213,33 @@
       </div>
      </footer>
      <!-- قسم الفوتر نهاية -->
+
+
+     <script>
+      // جلب جميع الأزرار التي تحمل الفئة "accordion"
+      var acc = document.getElementsByClassName("accordion");
+      
+      // إضافة حدث عند الضغط على كل زر
+      for (var i = 0; i < acc.length; i++) {
+          acc[i].addEventListener("click", function() {
+              // التبديل بين إضافة وإزالة فئة "active" للزر
+              this.classList.toggle("active");
+
+              var panel = this.nextElementSibling;
+
+              // التبديل بين فتح وإغلاق الـ panel باستخدام max-height و opacity
+              if (panel.style.maxHeight) {
+                  // إغلاق المحتوى
+                  panel.style.maxHeight = null;
+                  panel.style.opacity = 0;
+              } else {
+                  // فتح المحتوى
+                  panel.style.maxHeight = panel.scrollHeight + "px"; // تعيين max-height لارتفاع المحتوى الفعلي
+                  panel.style.opacity = 1; // تعيين الشفافية لتصبح مرئية
+              }
+          });
+      }
+  </script>
      
     
      <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
