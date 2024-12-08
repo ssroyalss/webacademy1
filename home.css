@@ -25,7 +25,7 @@
     padding: 10px;
 }
 #navbar{
-    background: RGB(146, 168, 209)
+    background: #285890;
 }
 #logo{
     font-size: 35px;
@@ -55,7 +55,7 @@
 
 }
 .nav-item .nav-link:hover{
-    background: rgb(4, 3, 85);
+    background: rgba(4, 3, 85, 0.336);
 }
 
 #navbar form button{
@@ -322,8 +322,9 @@
     width: 100%;
     margin-top: 10px;
     text-align: center;
-    background: RGB(146, 168, 209);
+    background: #285890;
     height: auto;
+    position: absolute;
     
 
 }
