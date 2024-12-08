@@ -6,6 +6,14 @@
     text-decoration: none;
     list-style: none;
     scroll-behavior: smooth;
+    line-height: 1.6; /* لضبط المسافة بين الأسطر */
+    font-family: 'Arial', sans-serif;
+    font-weight: bold; /* يمكن أيضًا استخدام القيم الرقمية مثل 700 */
+    font-weight: 1000; /* تعريض كبير */
+    font-stretch: expanded; /* يجعل الخط أوسع */
+    letter-spacing: 0.5px; /* مسافة بين الحروف أقل للنصوص العادية */
+
+
 }
 
 
