@@ -37,7 +37,7 @@
     padding: 10px;
 }
 #navbar{
-    background: #285890;
+    background: #8c8c8c;
 }
 #logo{
     font-size: 35px;
@@ -51,7 +51,7 @@
 
 }
 .navbar-toggler span{
-    color: rgb(9, 15, 99);
+    color: #152e44;
 }
 
 .navbar-nav{
@@ -70,7 +70,7 @@
     background: rgba(4, 3, 85, 0.336);}
 
 #navbar form button{
-    background: rgb(18, 9, 97);
+    background: #152e44;
     color: rgb(243, 231, 231);
     border: none;
 }
@@ -261,7 +261,7 @@
 .Packages .card .card-body a{
     padding: 10px;
     text-decoration: none;
-    background: rgb(18, 9, 97);
+    background: #152e44;
     color: white;
     border-radius: 5px;
 }
@@ -424,7 +424,7 @@
     width: 100%;
     margin-top: 10px;
     text-align: center;
-    background: #285890;
+    background: #8c8c8c;
     height: auto;
     position: absolute;
     
@@ -456,7 +456,7 @@
 }
 
 .social-links i:hover{
-    background: rgb(18, 9, 97);;
+    background: #152e44;
 }
 
 
