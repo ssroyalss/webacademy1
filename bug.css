@@ -43,7 +43,7 @@
 #logo{
     font-size: 35px;
     font-weight: 600;
-    color: rgb(20, 3, 95);
+    color: #152e44;
     text-shadow: 0px 1px 1px black;
     margin-bottom: 5px;
 }
@@ -52,7 +52,7 @@
 
 }
 .navbar-toggler span{
-    color: rgb(9, 15, 99);
+    color: #152e44;
 }
 
 .navbar-nav{
@@ -68,7 +68,7 @@
 
 }
 .nav-item .nav-link:hover{
-    background: rgba(4, 3, 85, 0.336);
+    background: #152e44;
 }
 
 #navbar form button{
@@ -153,7 +153,7 @@
     transition: 0.5s;  
 }
 .home .content a:hover{
-    background: rgb(18, 9, 97);
+    background: #152e44;
     color: white;
 }
 
@@ -191,7 +191,7 @@
 }
 
 .main-text h1 span{
-    color: rgb(55, 19, 155);
+    color: #152e44;
 
 }
 
@@ -286,7 +286,7 @@
 }
 
 .main-txt h1 span{
-    color: rgb(18, 9, 97);;
+    color: #152e44;
 }
 
 .Packages .card{
