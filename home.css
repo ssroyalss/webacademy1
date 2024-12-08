@@ -51,7 +51,7 @@
 
 }
 .navbar-toggler span{
-    color: rgb(9, 15, 99);
+    color: #152e44;
 }
 
 .navbar-nav{
@@ -154,7 +154,7 @@
     transition: 0.5s;  
 }
 .home .content a:hover{
-    background: rgb(18, 9, 97);
+    background: #152e44;
     color: white;
 }
 
