@@ -71,7 +71,7 @@
 }
 
 #navbar form button{
-    background: rgb(18, 9, 97);
+    background:  #152e44 ;
     color: rgb(243, 231, 231);
     border: none;
 }
@@ -195,7 +195,7 @@
 }
 
 .main-txt h1 span{
-    color: rgb(18, 9, 97);;
+    color: #152e44 ;
 }
 
 .Packages .card{
@@ -235,7 +235,7 @@
 .Packages .card .card-body a{
     padding: 10px;
     text-decoration: none;
-    background: rgb(18, 9, 97);
+    background:  #152e44 ;
     color: white;
     border-radius: 5px;
 }
@@ -366,7 +366,7 @@
 }
 
 .social-links i:hover{
-    background: rgb(18, 9, 97);;
+    background: #152e44;
 }
 
 
