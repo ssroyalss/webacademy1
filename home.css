@@ -16,7 +16,11 @@
 
 }
 
-
+.arabic {
+    direction: rtl; /* اتجاه النص من اليمين إلى اليسار */
+    text-align: right; /* محاذاة النص إلى اليمين */
+    font-family: 'Arial', sans-serif; /* خط مناسب للغة العربية */
+}
 /* تنسيق المنيو  */
 
 
