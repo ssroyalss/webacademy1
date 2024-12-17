@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset='utf-8'>
-    <title>EVIL TWIN</title>
+    <title>SQL</title>
     <link rel='stylesheet' href='bug.css'>
 
     <!--هنا رابط البوت ستراب للاستعادة من المكتبة-->
@@ -32,38 +32,33 @@
 <body>
 
     <!-- هنا الناف بار المنيو في الاعلى-->
-    <nav class="navbar navbar-expand-lg fixed-top" id="navbar">
-        <div class="container">
-            <a class="navbar-brand" href="#">
-                <img src="logo.png" >
-            </a>
-          <a class="navbar-brand" href="index.html" id="logo"><span>W</span>ebAcademy</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
-            <span><ic class="fa-solid fa-bars"></i></span>
-          </button>
-          <div class="collapse navbar-collapse" id="mynavbar">
-            <ul class="navbar-nav me-auto">
-              <li class="nav-item">
-                <a class="nav-link active" href="index.html">الرئيسية</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#Packages">الادوات</a>
-              </li>
-                
-            </ul>
-            
-            <form class="d-flex">
-              <input class="form-control me-2" type="text" placeholder="Search">
-              <button class="btn btn-primary" type="button">Search</button>
-              <li class="nav-item">
-              </li> 
-
-
-
-            </form>
+    <header id="header">
+      <nav class="navbar navbar-expand-lg" id="navbar">
+          <div class="container">
+              <a class="navbar-brand" href="#">
+                  <img src="logo.png" alt="Logo">
+              </a>
+              <a class="navbar-brand" href="index.html" id="logo"><span>W</span>ebAcademy</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+                  <span><i class="fa-solid fa-bars"></i></span>
+              </button>
+              <div class="collapse navbar-collapse" id="mynavbar">
+                  <ul class="navbar-nav me-auto">
+                      <li class="nav-item">
+                          <a class="nav-link active" href="index.html">الرئيسية</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="#Packages">الادوات</a>
+                      </li>
+                  </ul>
+                  <form class="d-flex">
+                      <input class="form-control me-2" type="text" placeholder="Search">
+                      <button class="btn btn-primary" type="button">Search</button>
+                  </form>
+              </div>
           </div>
-        </div>
       </nav>
+  </header>
     <!--  هنا الناف بار المنيو في الاعلى-->
 
 
@@ -81,54 +76,130 @@
         <section class="book" id="book">
             <div class="container">
               <div class="main-text">
-                <h1><span>Do</span>s attack</h1>
+                <h1><span>S</span>QL Injection</h1>
       
       
                 <div class="row">
                   <div class="col-md-6 py-3 py-md-0">
                     <div class="card">
-                      <iframe width="100%" height="315" src="https://www.youtube.com/embed/G77CCab9aqg?si=RGn5PtaRdkduntJu" frameborder="0" allowfullscreen></iframe>
-                      <p>المقدم : هيثم الحربي</p> 
+                      <iframe width="100%" height="315" src="https://www.youtube.com/embed/FlTg79Awtz0?si=iN_opB632DdO-sDp" frameborder="0" allowfullscreen></iframe>
+                      <p>المقدم : سليمان السماعيل</p> 
                     </div>
                   </div>
       
                   <div class="col-md-6 py-3 py-md-0">
-                    <p>Dos attack</p>
-                      <p class="arabic">ثغرة DOS Attack (اختصارًا لـ Denial of Service Attack) هي نوع من الهجمات الإلكترونية التي تهدف إلى تعطيل خدمات موقع إلكتروني أو خادم بحيث يصبح غير قادر على الاستجابة لطلبات المستخدمين الشرعيين. يتم ذلك عن طريق إرسال عدد هائل من الطلبات إلى الخادم المستهدف خلال فترة زمنية قصيرة، مما يؤدي إلى استهلاك موارده (مثل المعالج أو الذاكرة أو النطاق الترددي للشبكة) بشكل مفرط.</p>
+                    <p>SQL Injection</p>
+                      <p class="arabic"> هو نوع من الهجمات السيبرانية يستغل الثغرات في تطبيقات الويب التي تستخدم قواعد البيانات. يحدث ذلك عندما يقوم المهاجم بإدخال تعليمات SQL خبيثة في حقول الإدخال (مثل نماذج تسجيل الدخول أو استعلامات البحث) بهدف التلاعب بقاعدة البيانات.
 
+                        تستغل هذه التقنية ضعف التحقق من صحة البيانات، مما يسمح للمهاجم بتنفيذ استعلامات غير مصرح بها، مثل استرجاع بيانات حساسة، تعديل السجلات، أو حتى حذف بيانات.
+                        
+                        يمكن أن تؤدي هجمات SQL Injection إلى فقدان البيانات، تسريب معلومات حساسة، أو تعريض النظام للخطر.
+                        
+                        تتضمن بعض الحماية ضد SQL Injection استخدام تعليمات البرمجة الآمنة، مثل العبارات الم Prepared، والتحقق من صحة المدخلات.
+                        
+                        تعتبر الحماية من SQL Injection أمرًا حيويًا لأي تطبيق ويب يعتمد على قواعد البيانات للحفاظ على أمان المعلومات وسلامتها. </p>
       
                   </div>
                 </div>
               </div>
             </div>
 
+
+            <div class="container">
+              <div class="main-text">
+                <h1><span>H</span>Havij Tool</h1>
+      
+      
+                <div class="row">
+                  <div class="col-md-6 py-3 py-md-0">
+                    <div class="card">
+                      <iframe width="100%" height="315" src="https://www.youtube.com/embed/aWlONcd-ZO4?si=MSi6KrwL1raOwz5M" frameborder="0" allowfullscreen></iframe>
+                      <p>المقدم : سليمان السماعيل</p> 
+                    </div>
+                  </div>
+      
+                  <div class="col-md-6 py-3 py-md-0">
+                    <p>Havij</p>
+                      <p class="arabic">Havij  هي أداة اختبار اختراق تُستخدم لاكتشاف واستغلال ثغرات SQL Injection. توفر واجهة بسيطة تسمح باستخراج البيانات من قواعد البيانات بسهولة. تُعد خيارًا شائعًا بين مختبري الأمان لسهولة الاستخدام وفاعليتها. </p>
+                        <p></p>
+      
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="container">
+              <div class="main-text">
+                <h1><span>j</span>SQL Tool</h1>
+      
+      
+                <div class="row">
+                  <div class="col-md-6 py-3 py-md-0">
+                    <div class="card">
+                      <iframe width="100%" height="315" src="https://www.youtube.com/embed/z54BJRUq2PA?si=XPlKkMSex2RjUWSz" frameborder="0" allowfullscreen></iframe>
+                      <p>المقدم : سليمان السماعيل</p> 
+                    </div>
+                  </div>
+      
+                  <div class="col-md-6 py-3 py-md-0">
+                    <p>jSQL</p>
+                      <p class="arabic">هي أداة مفتوحة المصدر مخصصة لاختبار ثغرات في تطبيقات الويب. تتيح استخراج البيانات من قواعد البيانات باستخدام واجهة رسومية. تُعد مفيدة للمختبرين والمطورين في تعزيز الأما</p>
+                        <p></p>
+      
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+
+            <div class="container">
+              <div class="main-text">
+                <h1><span>S</span>qlmap Tool</h1>
+      
+      
+                <div class="row">
+                  <div class="col-md-6 py-3 py-md-0">
+                    <div class="card">
+                      <iframe width="100%" height="315" src="https://www.youtube.com/embed/zBP-15oVehE?si=shaszfH8jJbmrvKZ" frameborder="0" allowfullscreen></iframe>
+                      <p>المقدم : سليمان السماعيل</p> 
+                    </div>
+                  </div>
+      
+                  <div class="col-md-6 py-3 py-md-0">
+                    <p>sqlmap</p>
+                      <p class="arabic">هي أداة آلية لاكتشاف واستغلال ثغرات SQL Injection بفعالية وسرعة. توفر إمكانيات متقدمة لأتمتة الهجمات على قواعد البيانات. تُعتبر sqlmap من الأدوات الأساسية لمختبري الأمان.</p>
+                        <p></p>
+      
+                  </div>
+                </div>
+              </div>
+            </div>
          
           </section>
           <!-- تعريف القسم  نهاية -->
 
-          <button class="accordion">طرق الحماية</button>
 
-          <div class="panel">
-              <section class="book" id="book">
-                  <div class="container">
-                    <div class="main-text">
-                      <h1><span>Dos </span>attack</h1>
-            
-            
-            
-                        <div class="col-md-6 py-3 py-md-0" style="margin-left: 320px;">
-                            <p class="arabic" >
-                              1.	تعطيل او إخفاء SSID  من خلال اعدادات الشبكة
-                              
-                              2.	تحديث الأجهزة بانتظام:
-                              قم بتحديث أنظمة التشغيل والتطبيقات باستمرار لإصلاح الثغرات الأمنية.
-                              </p>
-            
-                        </div>
-                      </div>
-                    </div>
+    <button class="accordion">طرق الحماية</button>
+
+    <div class="panel">
+        <section class="book" id="book">
+            <div class="container">
+              <div class="main-text">
+                <h1><span>S</span>QL Injection</h1>
+      
+      
+      
+                  <div class="col-md-6 py-3 py-md-0" style="margin-left: 320px;">
+                      <p class="arabic" >  لحماية الموقع من ثغرة SQL Injection، يجب تنظيف مدخلات المستخدم باستخدام أدوات مثل الاستعلامات المعدة (Prepared Statements) أو إجراءات الربط (Bound Parameters). كما يُنصح بالتحقق من صحة البيانات المُدخلة وقبول القيم المتوقعة فقط. قم بتحديد الأذونات في قاعدة البيانات بحيث يقتصر المستخدم على أقل صلاحيات ممكنة.</p>
+      
                   </div>
-          </div>
+                </div>
+              </div>
+            </div>
+    </div>
+
       
 
     <!--انواع الثغرات بداية -->
@@ -148,11 +219,24 @@
 
               <img src="tools1.jpg" alt="" height="250px">
               <div class="card-body">
-                <h3> wifidos.py</h3>
-                <p>تم انشاء الأداة بأستخدام لغة البايثون لانشاء هجمة Dos attack على الشبكة
-                </p>
+                <h3>SQLMap</h3>
+                <p>اداة لاختبار واستغلال الثغرات</p>
               </div>
             </div>
+
+          </div>
+
+          <div class="col-md-4 py-3 py-md-0">
+            <div class="card">
+
+
+              <img src="tools1.jpg" alt="" height="250px">
+              <div class="card-body">
+                <h3>Havij</h3>
+                <p>أداة سهلة الاستخدام للاختراق قواعد البيانات</p>
+              </div>
+            </div>
+            
           </div>
 
           <div class="col-md-4 py-3 py-md-0">
@@ -161,9 +245,8 @@
 
               <img src="tools1.jpg" alt=""  height="250px">
               <div class="card-body">
-                <h3>ALFA network wireless</h3>
-                <p>هو لاقط شبكة وايرليس
-                    هذه القطعة تقوم بإلتقاط او مسح لشبكات الوايرليس Wireless التي حولك وعلى مدى 350 متر أو اكثر</p>
+                <h3>Jsql</h3>
+                <p>اداة تستغل الثغرات لاختراق تطبيقات الويب</p>
               </div>
             </div>
             
@@ -171,10 +254,8 @@
 
           
 
-          
-
-
             </div>
+            
           </div>
         </div>
       </div>
@@ -214,7 +295,6 @@
      </footer>
      <!-- قسم الفوتر نهاية -->
 
-
      <script>
       // جلب جميع الأزرار التي تحمل الفئة "accordion"
       var acc = document.getElementsByClassName("accordion");
@@ -242,6 +322,9 @@
   </script>
      
     
+
+
+     
      <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
      <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
